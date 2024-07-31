@@ -15,6 +15,7 @@
 		BFCE0B982C5AB87E004CEA6E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCE0B972C5AB87E004CEA6E /* HomeView.swift */; };
 		BFCE0B9A2C5AB930004CEA6E /* HistoricDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCE0B992C5AB930004CEA6E /* HistoricDataView.swift */; };
 		BFCE0B9C2C5AD26D004CEA6E /* ProgressCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCE0B9B2C5AD26D004CEA6E /* ProgressCircleView.swift */; };
+		BFCE0BA12C5AF10A004CEA6E /* StepsCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCE0BA02C5AF10A004CEA6E /* StepsCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		BFCE0B972C5AB87E004CEA6E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		BFCE0B992C5AB930004CEA6E /* HistoricDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoricDataView.swift; sourceTree = "<group>"; };
 		BFCE0B9B2C5AD26D004CEA6E /* ProgressCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressCircleView.swift; sourceTree = "<group>"; };
+		BFCE0BA02C5AF10A004CEA6E /* StepsCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,14 +61,13 @@
 		BFCE0B862C5A877A004CEA6E /* Fitoku */ = {
 			isa = PBXGroup;
 			children = (
+				BFCE0B9D2C5AEE78004CEA6E /* Home */,
 				BFCE0B872C5A877A004CEA6E /* FitokuApp.swift */,
 				BFCE0B892C5A877A004CEA6E /* ContentView.swift */,
 				BFCE0B8B2C5A877D004CEA6E /* Assets.xcassets */,
 				BFCE0B8D2C5A877D004CEA6E /* Preview Content */,
 				BFCE0B952C5AB433004CEA6E /* FitnessTabView.swift */,
-				BFCE0B972C5AB87E004CEA6E /* HomeView.swift */,
 				BFCE0B992C5AB930004CEA6E /* HistoricDataView.swift */,
-				BFCE0B9B2C5AD26D004CEA6E /* ProgressCircleView.swift */,
 			);
 			path = Fitoku;
 			sourceTree = "<group>";
@@ -77,6 +78,16 @@
 				BFCE0B8E2C5A877D004CEA6E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BFCE0B9D2C5AEE78004CEA6E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				BFCE0B972C5AB87E004CEA6E /* HomeView.swift */,
+				BFCE0B9B2C5AD26D004CEA6E /* ProgressCircleView.swift */,
+				BFCE0BA02C5AF10A004CEA6E /* StepsCard.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,6 +164,7 @@
 				BFCE0B9C2C5AD26D004CEA6E /* ProgressCircleView.swift in Sources */,
 				BFCE0B982C5AB87E004CEA6E /* HomeView.swift in Sources */,
 				BFCE0B9A2C5AB930004CEA6E /* HistoricDataView.swift in Sources */,
+				BFCE0BA12C5AF10A004CEA6E /* StepsCard.swift in Sources */,
 				BFCE0B8A2C5A877A004CEA6E /* ContentView.swift in Sources */,
 				BFCE0B882C5A877A004CEA6E /* FitokuApp.swift in Sources */,
 			);

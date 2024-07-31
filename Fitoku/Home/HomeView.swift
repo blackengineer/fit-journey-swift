@@ -12,12 +12,16 @@ struct HomeView: View {
     @State var exercise: Int = 48
     @State var stand: Int = 12
     
+    var mockSteps = [
+        Steps(id: 0, title: "Today's Steps", subtitle: "Goal: 5,000", image: "figure.walk", tintColor: .accent1, amount: "2,278"),
+        Steps(id: 1, title: "Weekly Average", subtitle: "Goal: 7,500", image: "figure.walk", tintColor: .accent1, amount: "9,389")
+    ]
+    
     var body: some View {
         ScrollView(showsIndicators: false) {
             VStack(alignment: .leading) {
                 Text("Dashboard")
                     .font(.title).bold()
-                    .padding()
                 
                 HStack {
                     
@@ -73,10 +77,33 @@ struct HomeView: View {
                     
                 }
                 .padding()
-                .background(.gray.opacity(0.05))
+                .background(Color.gray.opacity(0.05))
                 .cornerRadius(12)
             }
             .padding()
+            
+            HStack {
+                Text("Steps")
+                    .font(.title3)
+                    .fontWeight(.semibold)
+                
+                Spacer()
+                
+                Button {
+                    print("Show More")
+                } label: {
+                    Text("Show More")
+                        .foregroundColor(.accent1)
+                }
+            }
+            .padding(.horizontal)
+            
+            LazyVGrid(columns: Array(repeating: GridItem(), count: 1)) {
+                ForEach(mockSteps, id: \.id) { step in StepsCard(steps: step)
+                    
+                }
+            }
+            .padding(.horizontal)
         }
     }
 }
