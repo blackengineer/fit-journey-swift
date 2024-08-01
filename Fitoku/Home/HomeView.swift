@@ -23,6 +23,13 @@ struct HomeView: View {
         Workout(id: 2, title: "Traditional Strength Training", image: "figure.strengthtraining.traditional", tintColor: .accent2, duration: "60 min", date: "Aug 4", calories: "350 cal")
     ]
     
+    var mockHearts = [
+        Heart(id: 0, title: "Resting Heart Rate", subtitle: "Goal: 50 bpm", image: "heart.fill", tintColor: .red, amount: "55 bpm"),
+        Heart(id: 1, title: "Heart Rate Variability", subtitle: "Goal: 50 ms", image: "heart.fill", tintColor: .red, amount: "45 ms"),
+        Heart(id: 2, title: "Average Walking Heart Rate", subtitle: "Goal: 70 bpm", image: "heart.fill", tintColor: .red, amount: "75 bpm"),
+        Heart(id: 3, title: "Cardio Fitness", subtitle: "Goal: 60 VO2 max", image: "heart.fill", tintColor: .red, amount: "62.4 VO2 max")
+    ]
+    
     var body: some View {
         NavigationStack {
             ScrollView(showsIndicators: false) {
@@ -129,6 +136,29 @@ struct HomeView: View {
                 
                 LazyVStack {
                     ForEach(mockWorkouts, id: \.id) { workout in WorkoutCard(workout: workout)
+                        
+                    }
+                }
+                .padding()
+                
+                HStack {
+                    Text("Heart Health")
+                        .font(.title3)
+                        .fontWeight(.semibold)
+                    
+                    Spacer()
+                    
+                    NavigationLink {
+                        EmptyView()
+                    } label: {
+                        Text("Show More")
+                            .foregroundColor(.accent1)
+                    }
+                }
+                .padding(.horizontal)
+                
+                LazyVStack {
+                    ForEach(mockHearts, id: \.id) { heart in HeartCard(heart: heart)
                         
                     }
                 }
