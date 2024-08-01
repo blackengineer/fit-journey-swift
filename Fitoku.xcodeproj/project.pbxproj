@@ -18,6 +18,9 @@
 		BFCE0BA12C5AF10A004CEA6E /* StepCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCE0BA02C5AF10A004CEA6E /* StepCard.swift */; };
 		BFCE0BA32C5B2311004CEA6E /* WorkoutCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCE0BA22C5B2311004CEA6E /* WorkoutCard.swift */; };
 		BFCE0BA52C5B2F4B004CEA6E /* HeartCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCE0BA42C5B2F4B004CEA6E /* HeartCard.swift */; };
+		BFCE0BA72C5BB335004CEA6E /* NutritionCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCE0BA62C5BB335004CEA6E /* NutritionCard.swift */; };
+		BFCE0BA92C5BBC67004CEA6E /* SleepCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCE0BA82C5BBC67004CEA6E /* SleepCard.swift */; };
+		BFCE0BAD2C5BC836004CEA6E /* BodyCompCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCE0BAC2C5BC836004CEA6E /* BodyCompCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +36,9 @@
 		BFCE0BA02C5AF10A004CEA6E /* StepCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepCard.swift; sourceTree = "<group>"; };
 		BFCE0BA22C5B2311004CEA6E /* WorkoutCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutCard.swift; sourceTree = "<group>"; };
 		BFCE0BA42C5B2F4B004CEA6E /* HeartCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartCard.swift; sourceTree = "<group>"; };
+		BFCE0BA62C5BB335004CEA6E /* NutritionCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionCard.swift; sourceTree = "<group>"; };
+		BFCE0BA82C5BBC67004CEA6E /* SleepCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepCard.swift; sourceTree = "<group>"; };
+		BFCE0BAC2C5BC836004CEA6E /* BodyCompCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyCompCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +98,9 @@
 				BFCE0BA02C5AF10A004CEA6E /* StepCard.swift */,
 				BFCE0BA22C5B2311004CEA6E /* WorkoutCard.swift */,
 				BFCE0BA42C5B2F4B004CEA6E /* HeartCard.swift */,
+				BFCE0BA62C5BB335004CEA6E /* NutritionCard.swift */,
+				BFCE0BA82C5BBC67004CEA6E /* SleepCard.swift */,
+				BFCE0BAC2C5BC836004CEA6E /* BodyCompCard.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -166,8 +175,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFCE0BAD2C5BC836004CEA6E /* BodyCompCard.swift in Sources */,
 				BFCE0B962C5AB433004CEA6E /* FitnessTabView.swift in Sources */,
+				BFCE0BA92C5BBC67004CEA6E /* SleepCard.swift in Sources */,
 				BFCE0BA32C5B2311004CEA6E /* WorkoutCard.swift in Sources */,
+				BFCE0BA72C5BB335004CEA6E /* NutritionCard.swift in Sources */,
 				BFCE0BA52C5B2F4B004CEA6E /* HeartCard.swift in Sources */,
 				BFCE0B9C2C5AD26D004CEA6E /* ProgressCircleView.swift in Sources */,
 				BFCE0B982C5AB87E004CEA6E /* HomeView.swift in Sources */,
