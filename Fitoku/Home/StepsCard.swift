@@ -25,7 +25,7 @@ struct StepsCard: View {
                 HStack(alignment: .top) {
                     VStack(alignment: .leading, spacing: 8) {
                         Text(steps.title)
-                            .fontWeight(.medium)
+                            .fontWeight(.semibold)
                         
                         Text(steps.subtitle)
                             .font(.caption)

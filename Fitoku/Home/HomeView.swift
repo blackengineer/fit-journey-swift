@@ -17,93 +17,123 @@ struct HomeView: View {
         Steps(id: 1, title: "Weekly Average", subtitle: "Goal: 7,500", image: "figure.walk", tintColor: .accent1, amount: "9,389")
     ]
     
+    var mockWorkouts = [
+        Workout(id: 0, title: "Running", image: "figure.run", tintColor: .accent2, duration: "30 min", date: "Aug 1", calories: "302 cal"),
+        Workout(id: 1, title: "Functional Strength Training", image: "figure.strengthtraining.functional", tintColor: .accent2, duration: "45 min", date: "Aug 2", calories: "358 cal"),
+        Workout(id: 2, title: "Traditional Strength Training", image: "figure.strengthtraining.traditional", tintColor: .accent2, duration: "60 min", date: "Aug 4", calories: "350 cal")
+    ]
+    
     var body: some View {
-        ScrollView(showsIndicators: false) {
-            VStack(alignment: .leading) {
-                Text("Dashboard")
-                    .font(.title).bold()
-                
-                HStack {
+        NavigationStack {
+            ScrollView(showsIndicators: false) {
+                VStack(alignment: .leading) {
+                    Text("Dashboard")
+                        .font(.title).bold()
                     
-                    Spacer()
-                    
-                    VStack(alignment: .leading) {
-                        VStack(alignment: .leading, spacing: 8) {
-                            Text("Active Energy")
-                                .font(.callout)
-                                .bold()
-                            Text("\(activeEnergy) cal")
-                                .font(.title3)
-                                .bold()
-                                .foregroundColor(.accent1)
-                        }
-                        .padding(.bottom)
+                    HStack {
                         
-                        VStack(alignment: .leading, spacing: 8) {
-                            Text("Exercise")
-                                .font(.callout)
-                                .bold()
-                            Text("\(exercise) min")
-                                .font(.title3)
-                                .bold()
-                                .foregroundColor(.accent2)
-                        }
-                        .padding(.bottom)
+                        Spacer()
                         
-                        VStack(alignment: .leading, spacing: 8) {
-                            Text("Stand")
-                                .font(.callout)
-                                .bold()
-                            Text("\(stand) hr")
-                                .font(.title3)
-                                .bold()
-                                .foregroundColor(.accent3)
+                        VStack(alignment: .leading) {
+                            VStack(alignment: .leading, spacing: 8) {
+                                Text("Active Energy")
+                                    .font(.callout)
+                                    .bold()
+                                Text("\(activeEnergy) cal")
+                                    .font(.title3)
+                                    .bold()
+                                    .foregroundColor(.accent1)
+                            }
+                            .padding(.bottom)
+                            
+                            VStack(alignment: .leading, spacing: 8) {
+                                Text("Exercise")
+                                    .font(.callout)
+                                    .bold()
+                                Text("\(exercise) min")
+                                    .font(.title3)
+                                    .bold()
+                                    .foregroundColor(.accent2)
+                            }
+                            .padding(.bottom)
+                            
+                            VStack(alignment: .leading, spacing: 8) {
+                                Text("Stand")
+                                    .font(.callout)
+                                    .bold()
+                                Text("\(stand) hr")
+                                    .font(.title3)
+                                    .bold()
+                                    .foregroundColor(.accent3)
+                            }
                         }
+                        
+                        Spacer()
+                        
+                        ZStack {
+                            ProgressCircleView(progress: $activeEnergy, goal: 1000, color: .accent1)
+                            
+                            ProgressCircleView(progress: $exercise, goal: 60, color: .accent2)
+                                .padding(.all, 20)
+                            
+                            ProgressCircleView(progress: $stand, goal: 15, color: .accent3)
+                                .padding(.all, 40)
+                        }
+                        
+                        Spacer()
+                        
                     }
-                    
-                    Spacer()
-                    
-                    ZStack {
-                        ProgressCircleView(progress: $activeEnergy, goal: 1000, color: .accent1)
-                        
-                        ProgressCircleView(progress: $exercise, goal: 60, color: .accent2)
-                            .padding(.all, 20)
-                        
-                        ProgressCircleView(progress: $stand, goal: 15, color: .accent3)
-                            .padding(.all, 40)
-                    }
-                    
-                    Spacer()
-                    
+                    .padding()
+                    .background(Color.gray.opacity(0.05))
+                    .cornerRadius(12)
                 }
                 .padding()
-                .background(Color.gray.opacity(0.05))
-                .cornerRadius(12)
-            }
-            .padding()
-            
-            HStack {
-                Text("Steps")
-                    .font(.title3)
-                    .fontWeight(.semibold)
                 
-                Spacer()
-                
-                Button {
-                    print("Show More")
-                } label: {
-                    Text("Show More")
-                        .foregroundColor(.accent1)
-                }
-            }
-            .padding(.horizontal)
-            
-            LazyVGrid(columns: Array(repeating: GridItem(), count: 1)) {
-                ForEach(mockSteps, id: \.id) { step in StepsCard(steps: step)
+                HStack {
+                    Text("Steps")
+                        .font(.title3)
+                        .fontWeight(.semibold)
                     
+                    Spacer()
+                    
+                    Button {
+                        print("Show More")
+                    } label: {
+                        Text("Show More")
+                            .foregroundColor(.accent1)
+                    }
                 }
+                .padding(.horizontal)
+                
+                LazyVStack {
+                    ForEach(mockSteps, id: \.id) { step in StepsCard(steps: step)
+                    }
+                }
+                .padding()
+                
+                HStack {
+                    Text("Workout History")
+                        .font(.title3)
+                        .fontWeight(.semibold)
+                    
+                    Spacer()
+                    
+                    NavigationLink {
+                        EmptyView()
+                    } label: {
+                        Text("Show More")
+                            .foregroundColor(.accent1)
+                    }
+                }
+                .padding(.horizontal)
+                
+                LazyVStack {
+                    ForEach(mockWorkouts, id: \.id) { workout in WorkoutCard(workout: workout)
+                        
+                    }
+                }
+                .padding()
             }
-            .padding(.horizontal)
         }
     }
 }
