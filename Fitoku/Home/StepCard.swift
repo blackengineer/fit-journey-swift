@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Steps {
+struct Step {
     let id: Int
     let title: String
     let subtitle: String
@@ -16,28 +16,28 @@ struct Steps {
     let amount: String
 }
 
-struct StepsCard: View {
-    @State var steps: Steps
+struct StepCard: View {
+    @State var step: Step
     
     var body: some View {
         ZStack {
             VStack {
                 HStack(alignment: .top) {
                     VStack(alignment: .leading, spacing: 8) {
-                        Text(steps.title)
+                        Text(step.title)
                             .fontWeight(.semibold)
                         
-                        Text(steps.subtitle)
+                        Text(step.subtitle)
                             .font(.caption)
                     }
                     
                     Spacer()
                     
-                    Image(systemName: steps.image)
-                        .foregroundColor(steps.tintColor)
+                    Image(systemName: step.image)
+                        .foregroundColor(step.tintColor)
                 }
                 
-                Text(steps.amount)
+                Text(step.amount)
                     .font(.title3)
                     .bold()
                     .padding(.top)
@@ -51,5 +51,5 @@ struct StepsCard: View {
 }
 
 #Preview {
-    StepsCard(steps: Steps(id: 0, title: "Today's Steps", subtitle: "Goal: 10000", image: "figure.walk", tintColor: .accent1, amount: "2,278"))
+    StepCard(step: Step(id: 0, title: "Today's Steps", subtitle: "Goal: 10000", image: "figure.walk", tintColor: .accent1, amount: "2,278"))
 }

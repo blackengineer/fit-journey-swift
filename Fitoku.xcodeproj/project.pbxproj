@@ -15,7 +15,7 @@
 		BFCE0B982C5AB87E004CEA6E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCE0B972C5AB87E004CEA6E /* HomeView.swift */; };
 		BFCE0B9A2C5AB930004CEA6E /* HistoricDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCE0B992C5AB930004CEA6E /* HistoricDataView.swift */; };
 		BFCE0B9C2C5AD26D004CEA6E /* ProgressCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCE0B9B2C5AD26D004CEA6E /* ProgressCircleView.swift */; };
-		BFCE0BA12C5AF10A004CEA6E /* StepsCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCE0BA02C5AF10A004CEA6E /* StepsCard.swift */; };
+		BFCE0BA12C5AF10A004CEA6E /* StepCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCE0BA02C5AF10A004CEA6E /* StepCard.swift */; };
 		BFCE0BA32C5B2311004CEA6E /* WorkoutCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCE0BA22C5B2311004CEA6E /* WorkoutCard.swift */; };
 		BFCE0BA52C5B2F4B004CEA6E /* HeartCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCE0BA42C5B2F4B004CEA6E /* HeartCard.swift */; };
 /* End PBXBuildFile section */
@@ -30,7 +30,7 @@
 		BFCE0B972C5AB87E004CEA6E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		BFCE0B992C5AB930004CEA6E /* HistoricDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoricDataView.swift; sourceTree = "<group>"; };
 		BFCE0B9B2C5AD26D004CEA6E /* ProgressCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressCircleView.swift; sourceTree = "<group>"; };
-		BFCE0BA02C5AF10A004CEA6E /* StepsCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsCard.swift; sourceTree = "<group>"; };
+		BFCE0BA02C5AF10A004CEA6E /* StepCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepCard.swift; sourceTree = "<group>"; };
 		BFCE0BA22C5B2311004CEA6E /* WorkoutCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutCard.swift; sourceTree = "<group>"; };
 		BFCE0BA42C5B2F4B004CEA6E /* HeartCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -89,7 +89,7 @@
 			children = (
 				BFCE0B972C5AB87E004CEA6E /* HomeView.swift */,
 				BFCE0B9B2C5AD26D004CEA6E /* ProgressCircleView.swift */,
-				BFCE0BA02C5AF10A004CEA6E /* StepsCard.swift */,
+				BFCE0BA02C5AF10A004CEA6E /* StepCard.swift */,
 				BFCE0BA22C5B2311004CEA6E /* WorkoutCard.swift */,
 				BFCE0BA42C5B2F4B004CEA6E /* HeartCard.swift */,
 			);
@@ -172,7 +172,7 @@
 				BFCE0B9C2C5AD26D004CEA6E /* ProgressCircleView.swift in Sources */,
 				BFCE0B982C5AB87E004CEA6E /* HomeView.swift in Sources */,
 				BFCE0B9A2C5AB930004CEA6E /* HistoricDataView.swift in Sources */,
-				BFCE0BA12C5AF10A004CEA6E /* StepsCard.swift in Sources */,
+				BFCE0BA12C5AF10A004CEA6E /* StepCard.swift in Sources */,
 				BFCE0B8A2C5A877A004CEA6E /* ContentView.swift in Sources */,
 				BFCE0B882C5A877A004CEA6E /* FitokuApp.swift in Sources */,
 			);

@@ -13,8 +13,8 @@ struct HomeView: View {
     @State var stand: Int = 12
     
     var mockSteps = [
-        Steps(id: 0, title: "Today's Steps", subtitle: "Goal: 5,000", image: "figure.walk", tintColor: .accent1, amount: "2,278"),
-        Steps(id: 1, title: "Weekly Average", subtitle: "Goal: 7,500", image: "figure.walk", tintColor: .accent1, amount: "9,389")
+        Step(id: 0, title: "Today's Steps", subtitle: "Goal: 5,000", image: "figure.walk", tintColor: .accent1, amount: "2,278"),
+        Step(id: 1, title: "Weekly Average", subtitle: "Goal: 7,500", image: "figure.walk", tintColor: .accent1, amount: "9,389")
     ]
     
     var mockWorkouts = [
@@ -113,7 +113,7 @@ struct HomeView: View {
                 .padding(.horizontal)
                 
                 LazyVStack {
-                    ForEach(mockSteps, id: \.id) { step in StepsCard(steps: step)
+                    ForEach(mockSteps, id: \.id) { step in StepCard(step: step)
                     }
                 }
                 .padding()
