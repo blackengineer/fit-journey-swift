@@ -21,6 +21,13 @@
 		BFCE0BA72C5BB335004CEA6E /* NutritionCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCE0BA62C5BB335004CEA6E /* NutritionCard.swift */; };
 		BFCE0BA92C5BBC67004CEA6E /* SleepCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCE0BA82C5BBC67004CEA6E /* SleepCard.swift */; };
 		BFCE0BAD2C5BC836004CEA6E /* BodyCompCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCE0BAC2C5BC836004CEA6E /* BodyCompCard.swift */; };
+		BFCE0BAF2C5BE25F004CEA6E /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCE0BAE2C5BE25F004CEA6E /* HomeViewModel.swift */; };
+		BFCE0BB42C5BE5EB004CEA6E /* Step.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCE0BB32C5BE5EB004CEA6E /* Step.swift */; };
+		BFCE0BB62C5BE61E004CEA6E /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCE0BB52C5BE61E004CEA6E /* Workout.swift */; };
+		BFCE0BB82C5BE641004CEA6E /* Heart.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCE0BB72C5BE641004CEA6E /* Heart.swift */; };
+		BFCE0BBA2C5BE663004CEA6E /* Nutrition.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCE0BB92C5BE663004CEA6E /* Nutrition.swift */; };
+		BFCE0BBC2C5BE68D004CEA6E /* Sleep.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCE0BBB2C5BE68D004CEA6E /* Sleep.swift */; };
+		BFCE0BBE2C5BE6B1004CEA6E /* BodyComp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCE0BBD2C5BE6B1004CEA6E /* BodyComp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +46,13 @@
 		BFCE0BA62C5BB335004CEA6E /* NutritionCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionCard.swift; sourceTree = "<group>"; };
 		BFCE0BA82C5BBC67004CEA6E /* SleepCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepCard.swift; sourceTree = "<group>"; };
 		BFCE0BAC2C5BC836004CEA6E /* BodyCompCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyCompCard.swift; sourceTree = "<group>"; };
+		BFCE0BAE2C5BE25F004CEA6E /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		BFCE0BB32C5BE5EB004CEA6E /* Step.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step.swift; sourceTree = "<group>"; };
+		BFCE0BB52C5BE61E004CEA6E /* Workout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
+		BFCE0BB72C5BE641004CEA6E /* Heart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heart.swift; sourceTree = "<group>"; };
+		BFCE0BB92C5BE663004CEA6E /* Nutrition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nutrition.swift; sourceTree = "<group>"; };
+		BFCE0BBB2C5BE68D004CEA6E /* Sleep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sleep.swift; sourceTree = "<group>"; };
+		BFCE0BBD2C5BE6B1004CEA6E /* BodyComp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyComp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,16 +107,47 @@
 		BFCE0B9D2C5AEE78004CEA6E /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				BFCE0B972C5AB87E004CEA6E /* HomeView.swift */,
-				BFCE0B9B2C5AD26D004CEA6E /* ProgressCircleView.swift */,
-				BFCE0BA02C5AF10A004CEA6E /* StepCard.swift */,
-				BFCE0BA22C5B2311004CEA6E /* WorkoutCard.swift */,
-				BFCE0BA42C5B2F4B004CEA6E /* HeartCard.swift */,
-				BFCE0BA62C5BB335004CEA6E /* NutritionCard.swift */,
-				BFCE0BA82C5BBC67004CEA6E /* SleepCard.swift */,
-				BFCE0BAC2C5BC836004CEA6E /* BodyCompCard.swift */,
+				BFCE0BB12C5BE4F8004CEA6E /* Models */,
+				BFCE0BB02C5BE4F2004CEA6E /* Views */,
+				BFCE0BB22C5BE4FE004CEA6E /* ViewModels */,
+				BFCE0BAE2C5BE25F004CEA6E /* HomeViewModel.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		BFCE0BB02C5BE4F2004CEA6E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BFCE0BA62C5BB335004CEA6E /* NutritionCard.swift */,
+				BFCE0BA42C5B2F4B004CEA6E /* HeartCard.swift */,
+				BFCE0BA82C5BBC67004CEA6E /* SleepCard.swift */,
+				BFCE0BAC2C5BC836004CEA6E /* BodyCompCard.swift */,
+				BFCE0BA22C5B2311004CEA6E /* WorkoutCard.swift */,
+				BFCE0BA02C5AF10A004CEA6E /* StepCard.swift */,
+				BFCE0B972C5AB87E004CEA6E /* HomeView.swift */,
+				BFCE0B9B2C5AD26D004CEA6E /* ProgressCircleView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BFCE0BB12C5BE4F8004CEA6E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BFCE0BB32C5BE5EB004CEA6E /* Step.swift */,
+				BFCE0BB52C5BE61E004CEA6E /* Workout.swift */,
+				BFCE0BB72C5BE641004CEA6E /* Heart.swift */,
+				BFCE0BB92C5BE663004CEA6E /* Nutrition.swift */,
+				BFCE0BBB2C5BE68D004CEA6E /* Sleep.swift */,
+				BFCE0BBD2C5BE6B1004CEA6E /* BodyComp.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BFCE0BB22C5BE4FE004CEA6E /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,15 +223,22 @@
 				BFCE0BAD2C5BC836004CEA6E /* BodyCompCard.swift in Sources */,
 				BFCE0B962C5AB433004CEA6E /* FitnessTabView.swift in Sources */,
 				BFCE0BA92C5BBC67004CEA6E /* SleepCard.swift in Sources */,
+				BFCE0BB42C5BE5EB004CEA6E /* Step.swift in Sources */,
 				BFCE0BA32C5B2311004CEA6E /* WorkoutCard.swift in Sources */,
+				BFCE0BBE2C5BE6B1004CEA6E /* BodyComp.swift in Sources */,
 				BFCE0BA72C5BB335004CEA6E /* NutritionCard.swift in Sources */,
 				BFCE0BA52C5B2F4B004CEA6E /* HeartCard.swift in Sources */,
 				BFCE0B9C2C5AD26D004CEA6E /* ProgressCircleView.swift in Sources */,
+				BFCE0BB62C5BE61E004CEA6E /* Workout.swift in Sources */,
 				BFCE0B982C5AB87E004CEA6E /* HomeView.swift in Sources */,
+				BFCE0BB82C5BE641004CEA6E /* Heart.swift in Sources */,
+				BFCE0BAF2C5BE25F004CEA6E /* HomeViewModel.swift in Sources */,
 				BFCE0B9A2C5AB930004CEA6E /* HistoricDataView.swift in Sources */,
 				BFCE0BA12C5AF10A004CEA6E /* StepCard.swift in Sources */,
 				BFCE0B8A2C5A877A004CEA6E /* ContentView.swift in Sources */,
+				BFCE0BBA2C5BE663004CEA6E /* Nutrition.swift in Sources */,
 				BFCE0B882C5A877A004CEA6E /* FitokuApp.swift in Sources */,
+				BFCE0BBC2C5BE68D004CEA6E /* Sleep.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

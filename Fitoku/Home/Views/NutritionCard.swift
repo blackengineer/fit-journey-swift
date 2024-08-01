@@ -7,15 +7,6 @@
 
 import SwiftUI
 
-struct Nutrition {
-    let id: Int
-    let title: String
-    let subtitle: String
-    let image: String
-    let tintColor: Color
-    let amount: String
-}
-
 struct NutritionCard: View {
     @State var nutrition: Nutrition
     

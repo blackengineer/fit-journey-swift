@@ -7,14 +7,6 @@
 
 import SwiftUI
 
-struct BodyComp {
-    let id: Int
-    let title: String
-    let image: String
-    let tintColor: Color
-    let amount: String
-}
-
 struct BodyCompCard: View {
     @State var bodyComp: BodyComp
     

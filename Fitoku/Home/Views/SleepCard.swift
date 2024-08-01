@@ -7,14 +7,6 @@
 
 import SwiftUI
 
-struct Sleep {
-    let id: Int
-    let title: String
-    let image: String
-    let tintColor: Color
-    let amount: String
-}
-
 struct SleepCard: View {
     @State var sleep: Sleep
     
